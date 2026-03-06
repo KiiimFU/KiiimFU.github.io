@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kimberly Fu</title>
   <link rel="stylesheet" href="style.css">
-  <!-- <link rel="stylesheet" href="resume.css"> -->
+  <link rel="stylesheet" href="resume.css">
 
   <!-- icon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -18,16 +18,35 @@
 
   <!-- Contact icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
 </head>
 <body>
   <header>
+    <!-- header left -->
     <div class="header-left">
       <a href="index.html">
         <img src="apple-touch-icon.png" alt="Logo Picture">
       </a>
       <h1>Kimberly Fu</h1>
+      <div class="header-links">
+      <a href="mailto:kimberlyfu006@gmail.com" title="Email">
+      <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/KiiimFU" title="GitHub" target="_blank">
+      <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/kimberly-fu-99a634297" title="LinkedIn" target="_blank">
+      <i class="fab fa-linkedin"></i>
+      </a>
     </div>
-    <div class="header-right">
+    </div>
+    <!-- hamburger -->
+    <button class="hamburger" id="hamburger">
+    <i class="fas fa-bars"></i>
+    </button>
+    <!-- header right -->
+    <div class="header-right" id="nav-menu">
       <a href="index.html" data-text="About Me!">About Me!</a>
       <a href="Blog.html" data-text="Blog">Blog</a>
       <a href="Famcalendar.html" data-text="FamCalender">FamCalender</a>
@@ -35,15 +54,16 @@
   </header>
 
   <main>
-    <section>
-      <h1>Kimberly Fu</h1>
+    <!-- <section>
+      
     <p class="contact">
+      <h2>Kimberly Fu</h2>
       +1 (437) - 440 - 6168 | 
       <a href="mailto:kimberlyfu006@gmail.com">kimberlyfu006@gmail.com</a> |
       <a href="https://github.com/KiiimFU">https://github.com/KiiimFU</a> |
       <a href="https://www.linkedin.com/in/kimberly-fu-99a634297">linkedin.com/in/kimberly-fu-99a634297</a>
     </p>
-    </section>
+    </section> -->
     <section>
       <h2>Skills</h2>
       <p><strong>Technical Skills:</strong> Python / Java / R / SQL / PostgreSQL / HTML / CSS / C / Git / bash / VS Code / MIPS Assembly / JavaScript</p>
@@ -181,18 +201,10 @@
     </p>
   </footer> -->
   <footer>
-  <div class="footer-links">
-    <a href="mailto:kimberlyfu006@gmail.com" title="Email">
-      <i class="fas fa-envelope"></i>
-    </a>
-    <a href="https://github.com/KiiimFU" title="GitHub" target="_blank">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/kimberly-fu-99a634297" title="LinkedIn" target="_blank">
-      <i class="fab fa-linkedin"></i>
-    </a>
-  </div>
+  
   <p class="footer-copy">&copy; 2026 Kimberly Fu. All rights reserved.</p>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>

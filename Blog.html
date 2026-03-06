@@ -12,15 +12,34 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <body>
     <header>
+    <!-- header left -->
     <div class="header-left">
       <a href="index.html">
         <img src="apple-touch-icon.png" alt="Logo Picture">
       </a>
       <h1>Kimberly Fu</h1>
+      <div class="header-links">
+      <a href="mailto:kimberlyfu006@gmail.com" title="Email">
+      <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/KiiimFU" title="GitHub" target="_blank">
+      <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/kimberly-fu-99a634297" title="LinkedIn" target="_blank">
+      <i class="fab fa-linkedin"></i>
+      </a>
     </div>
-    <div class="header-right">
+    </div>
+    <!-- hamburger -->
+    <button class="hamburger" id="hamburger">
+    <i class="fas fa-bars"></i>
+    </button>
+    <!-- header right -->
+    <div class="header-right" id="nav-menu">
       <a href="index.html" data-text="About Me!">About Me!</a>
       <a href="Blog.html" data-text="Blog">Blog</a>
       <a href="Famcalendar.html" data-text="FamCalender">FamCalender</a>
@@ -35,5 +54,7 @@
     <footer>
         <p>&copy; 2026 Kimberly Fu. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
+
 </body>
 </html>

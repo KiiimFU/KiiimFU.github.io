@@ -157,6 +157,8 @@ main {
     /* show hamburger, hide nav links */
     .hamburger {
         display: block;
+        padding-left:0;
+        padding-right:52px;
     }
 
     .header-right {
@@ -181,5 +183,21 @@ main {
         padding: 12px 12px 12px 80px;
         width: 100%;
         border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    /* h1 {
+        font-size: 1.2rem;  
+    } */
+
+    #icon {
+        display: none;  
+    }
+
+    .header-left {
+        gap: 4px;
+    }
+
+    header{
+        padding:0 20px;
     }
 }

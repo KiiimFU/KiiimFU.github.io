@@ -206,5 +206,20 @@
 </footer>
 
 <script src="script.js"></script>
+
+<!-- Chat Bubble -->
+<div id="chat-bubble" onclick="toggleChat()">💬</div>
+
+<div id="chat-window">
+  <div id="chat-header">
+    <span>Ask about Kim!</span>
+    <button onclick="toggleChat()">✕</button>
+  </div>
+  <div id="chat-messages"></div>
+  <div id="chat-input-area">
+    <input type="text" id="chat-input" placeholder="Ask me anything..." onkeydown="if(event.key==='Enter') sendMessage()"/>
+    <button onclick="sendMessage()" id="input-button">Send</button>
+  </div>
+</div>
 </body>
 </html>

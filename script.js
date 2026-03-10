@@ -68,6 +68,7 @@ function sendMessage(){
     .then(response => response.json())
     .then(data => {
         // 5
+        console.log("fetching!")
         document.getElementById('thinking').remove();
         msg.innerHTML += `<div class="msg-bot">${data.response}</div>`;
         chatHistory.push({role: 'user', content: userMessage},

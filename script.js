@@ -14,9 +14,9 @@ function toggleChat() {
     const chatbox = document.getElementById('chat-window');
     chatbox.classList.toggle('open');
 
-    // provoke render before input
-    if(chatbox.classList.contains('open')){
-        msg.innerHTML += `<div class="msg-bot" id="sayhi">Hiiii, welcome to Kimberly's Website! What you wanna know about me?</div>`;
+    // provoke render when page load
+    document.addEventListener("DOMContentLoaded", function() {
+    msg.innerHTML += `<div class="msg-bot" id="sayhi">Hiiii, welcome to Kimberly's Website! What you wanna know about me?</div>`;
         fetch('https://kiiimfu-chat-backend.onrender.com/chat', {
             method: 'POST',
             headers: {
@@ -31,7 +31,7 @@ function toggleChat() {
         .catch(error => {
             console.error('Error:', error);
         });
-    }
+});
 }
 
 // Function to :

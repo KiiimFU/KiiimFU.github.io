@@ -13,6 +13,10 @@ header{
     align-items: center;
     justify-content: space-between;
     width:100%;
+    /* to prevent horizontally scroll */
+    max-width: 100%;
+    box-sizing: border-box;
+
     height:72px;
     gap: 16px;
     
@@ -136,6 +140,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: "Times New Roman", Times, serif;
+
+    overflow-x:hidden;
 }
 
 /* ------------------------------ main ----------------------------- */
@@ -351,5 +357,13 @@ main {
 
     header{
         padding:0 20px;
+    }
+
+    span[style*="margin-left"] {
+        display: none;  /* hide the date spans on mobile */
+    }
+
+    p {
+        word-wrap: break-word;
     }
 }
